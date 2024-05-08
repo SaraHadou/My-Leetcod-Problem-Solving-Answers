@@ -1,4 +1,5 @@
-//Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+//Given a string s containing just the characters '(', ')', '{', '}', '[' and ']',
+// determine if the input string is valid.
 //
 //An input string is valid if:
 //
@@ -15,7 +16,7 @@
 
 import java.util.Stack;
 
-class Solution {
+class ValidParentheses {
 
     public boolean isValid(String s) {
         Stack<Integer> stackParentheses = new Stack<>();
@@ -31,12 +32,10 @@ class Solution {
         return stackParentheses.size() == 1;
     }
 
-}
-
-class Main {
     public static void main(String[] args) {
         String s = "{}";
-        Solution solution = new Solution();
-        System.out.println(solution.isValid(s));
+        ValidParentheses validParentheses = new ValidParentheses();
+        System.out.println(validParentheses.isValid(s));
     }
+
 }
